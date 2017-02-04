@@ -10,9 +10,17 @@ GOAL:  Build a weather app that can do the following:
 		a.  Calculate Celsius/Fahrenheit conversion 
 */
 
+
 $(document).ready(function() {
     // $("#getMessage").on("click", function() {
-    $.get("https://api.darksky.net/forecast/80b31ad83d9fd2a91cbc3800e400628c/37.8267,-122.4233", function(weather) {
+//getting weather using local coordinates from darksky
+navigator.geolocation.getCurrentPosition(function(location) {
+    var lat = location.coords.latitude;
+    var lon = location.coords.longitude;
+    console.log("this is " +lat);
+    console.log(lon);
+});
+    $.get("https://api.darksky.net/forecast/80b31ad83d9fd2a91cbc3800e400628c/30,-97", function(weather) {
         var temperature = weather.currently.temperature;
         var icon = weather.currently.icon;
         $("#tempText").html("Temperature is " + temperature);
