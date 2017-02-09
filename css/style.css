@@ -1,0 +1,73 @@
+/* navigation */
+
+* {
+    margin: 0 auto;
+
+}
+
+body {
+	background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-weight: bold;
+  font-family: 'Pangolin', cursive;
+  font-size: 20px;
+}
+
+/*current weather*/
+.now {
+    text-align: center;
+    /*border: 2px solid black;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F1F1F1;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+
+/* forecast */
+
+.future {
+    text-align: center;
+    
+}
+
+
+
+#day1,
+#day2,
+#day3,
+#day4,
+#day5,
+#day6 {
+    background-color: #F1F1F1;
+    width: 300px;
+    text-align: center;
+    margin-top: 15px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+#day1:hover,
+#day2:hover,
+#day3:hover,
+#day4:hover,
+#day5:hover,
+#day6:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+/* footer */
