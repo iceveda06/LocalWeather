@@ -2,21 +2,48 @@
 
 * {
     margin: 0 auto;
-
 }
 
 body {
-	background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-weight: bold;
-  font-family: 'Pangolin', cursive;
-  font-size: 20px;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+}
+
+/*units*/
+.unit {
+	margin-top: 20px;
+}
+
+#fahrenheit {
+	background-color: white;
+	color: black;
+}
+
+#celsius {
+    background: white;
+    color: black;
+
+}
+
+.pressed {
+  background-color: red;
+}
+
+/*city box */
+
+#nameForm {
+margin-top: 20px;	
+text-align: center;	
 }
 
 /*current weather*/
+
 .now {
     text-align: center;
     /*border: 2px solid black;*/
@@ -26,7 +53,6 @@ body {
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-
 }
 
 
@@ -34,10 +60,7 @@ body {
 
 .future {
     text-align: center;
-    
 }
-
-
 
 #day1,
 #day2,
@@ -67,7 +90,6 @@ body {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 
 
 /* footer */
