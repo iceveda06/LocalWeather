@@ -36,7 +36,7 @@ $(document).ready(function() {
 
             //getting local temperature from OpenWeatherMap
 
-            $.get("https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?" + 'lat=' + lati + '&lon=' + lng + "&units=imperial" + "&APPID=0f282dc00daa96e733691054692f8b33", function(weather) {
+            $.get("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?" + 'lat=' + lati + '&lon=' + lng + "&units=imperial" + "&APPID=0f282dc00daa96e733691054692f8b33", function(weather) {
                 $("#tempText").html("Current Weather in " + value + " " + "is " + Math.round((weather.main.temp * 100) / 100) + String.fromCharCode(176));
 
 
@@ -82,7 +82,7 @@ var ctemp = Math.round((((((weather.main.temp) - 32) * 5) / 9)*100)/100);
 
             // getting forecast for the next 5 days
 
-            $.get("https://crossorigin.me/http://api.openweathermap.org/data/2.5/forecast/daily?" + 'lat=' + lati + '&lon=' + lng + "&units=imperial" + "&APPID=0f282dc00daa96e733691054692f8b33", function(forecast) {
+            $.get("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast/daily?" + 'lat=' + lati + '&lon=' + lng + "&units=imperial" + "&APPID=0f282dc00daa96e733691054692f8b33", function(forecast) {
                 console.log("http://api.openweathermap.org/data/2.5/forecast/daily?" + 'lat=' + lati + '&lon=' + lng + "&units=imperial" + "&APPID=0f282dc00daa96e733691054692f8b33")
                 var divsToAppend = "";
                 var divsToAppendC = "";
